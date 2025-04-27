@@ -1,0 +1,10 @@
+MONGODB_HOST: mongodb-prod.joinaiops.store  # submit your host
+REDIS_HOST: redis-prod.joinaiops.store 
+MYSQL_HOST: mysql-prod.joinaiops.store 
+RABBITMQ_HOST: rabbitmq-prod.joinaiops.store 
+CATALOGUE_HOST: catalogue-prod.joinaiops.store 
+USER_HOST: user-prod.joinaiops.store 
+CART_HOST: cart-prod.joinaiops.store 
+SHIPPING_HOST: shipping-prod.joinaiops.store 
+PAYMENT_HOST: payment-prod.joinaiops.store 
+DISPATCH_HOST: dispatch-prod.joinaiops.store 
