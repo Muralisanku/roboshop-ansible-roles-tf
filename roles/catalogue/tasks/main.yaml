@@ -1,12 +1,24 @@
-[Unit]
-Description = Cart Service
-[Service]
-User=roboshop
-Environment=REDIS_HOST={{REDIS_HOST}}
-Environment=CATALOGUE_HOST={{CATALOGUE_HOST}}
-Environment=CATALOGUE_PORT=80
-ExecStart=/bin/node /app/server.js
-SyslogIdentifier=cart
+- name: app setup
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: app-setup
 
-[Install]
-WantedBy=multi-user.target
+- name: node js
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: nodejs
+
+- name: mongodb setup
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: mongodb-setup
+
+- name: system start
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: systemd
+
+- name: deployment
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: deployment
