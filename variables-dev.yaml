@@ -2,9 +2,11 @@ MONGODB_HOST: mongodb-dev.joinaiops.store  # submit your host
 REDIS_HOST: redis-dev.joinaiops.store 
 MYSQL_HOST: mysql-dev.joinaiops.store 
 RABBITMQ_HOST: rabbitmq-dev.joinaiops.store 
-CATALOGUE_HOST: catalogue-dev.joinaiops.store 
-USER_HOST: user-dev.joinaiops.store 
-CART_HOST: cart-dev.joinaiops.store 
-SHIPPING_HOST: shipping-dev.joinaiops.store 
-PAYMENT_HOST: payment-dev.joinaiops.store 
-DISPATCH_HOST: dispatch-dev.joinaiops.store 
+CATALOGUE_HOST: catalogue.app-dev.joinaiops.store 
+USER_HOST: user.app-dev.joinaiops.store 
+CART_HOST: cart.app-dev.joinaiops.store 
+SHIPPING_HOST: shipping.app-dev.joinaiops.store 
+PAYMENT_HOST: payment.app-dev.joinaiops.store 
+DISPATCH_HOST: dispatch.app-dev.joinaiops.store 
+NEXUS_URL: http://172.31.1.211:8081/repository
+group_id: "com/roboshop"
